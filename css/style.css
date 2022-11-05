@@ -97,6 +97,9 @@ img {
     font-weight: 300;
     transition: var(--var-transition);
 }
+.contact-image {
+    z-index: 12;
+}
 .navbar ul li a:hover {
     opacity: 0.7;
 }
@@ -152,6 +155,7 @@ img {
     font-size: 18px;
     color:rgba(24, 23, 23, 0.767);
     padding: 20px 0;
+    padding-right: 80px;
     
 }
 .left-about-us .button {
@@ -190,8 +194,15 @@ img {
     z-index: 1;
     filter: drop-shadow(2px 4px 8px #585858);
 }
+.right-service {
+
+    overflow: hidden;
+}
 
 
+.right-div-o {
+    transform: translateX(1100px);
+}
 /* RIGHT-ABOUT-US PAGE ENDS FROM HERE */
 /* ABOUT ME PAGE ENDS FROM HERE */
 
@@ -202,6 +213,7 @@ img {
     grid-template-columns: 45% 55%;
     height: 900px;
     padding-top: 200px;
+    place-items: center;
  background-color: rgba(21, 20, 20, 0.925);
 
 
@@ -210,12 +222,11 @@ img {
 
 .left-service {
     display: grid;  
-    padding: 40px; 
-    padding: 400px 10px;  
 }
 .sIcon {
     text-align: center;
     font-size: 100px;
+    padding: 30px 80px;
 }
 
 .imgIcon3 {
@@ -279,6 +290,7 @@ img {
 }
 
 /* right service */
+
 .right-service {
     padding: 80px 100px;
     color: rgb(231, 234, 237);
@@ -306,6 +318,7 @@ img {
     margin: 10px 0;
     font-weight:300;
     color: #999999;
+    padding-right: 80px;
 }
 
 
@@ -505,23 +518,31 @@ img {
     }
     .left-service {
         display: grid;  
-        padding: 40px; 
-        padding: 100px 10px;  
+        padding:  10px;  
     }
     
+    .right-service p {
+        padding-right: 0px;
     
-  
+    }
+    .left-about-us p {
+        padding-right: 0px;
+    
+    }
     /* right service */
     .right-service {
         padding: 80px 100px;
         color: rgb(231, 234, 237);
         
     }
+    .sIcon {
+        font-size: 70px;
+        padding: 20px 60px;
+    }
+  
     }
   
    
-    
-  
 
 
 
@@ -1030,10 +1051,13 @@ img {
     .sIcon {
         text-align: center;
         font-size: 50px;
-        padding-right: 10px;
+        padding: 10px 50px;
     }
     .right-service h3 {
         font-size: 14px;
+    }
+    .right-service {
+        padding: 15px;
     }
     
     .right-service h1 {
@@ -1046,6 +1070,7 @@ img {
         font-size: 16.2px;
         line-height: 24px;
         margin: 10px 0;
+        
     }
     .box {
         width: 100%;
