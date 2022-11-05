@@ -32,3 +32,13 @@ const observer = new IntersectionObserver((entries) => {
  
  const hiddenElements = document.querySelectorAll('.hidden');
  hiddenElements.forEach((el) => observer.observe(el));
+
+
+const leftAbout = document.querySelector('.left-div');
+const rightDiv = document.querySelector('.right-div-o')
+window.addEventListener('scroll', ()=> {
+    let offSetY = window.scrollY;
+    
+    leftAbout.style.transform = `translateX(calc(700px - ${offSetY}px))`
+    rightDiv.style.transform = `translateX(calc(1600px - ${offSetY}px))`
+})
