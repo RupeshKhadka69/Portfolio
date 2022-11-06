@@ -6,9 +6,6 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    overscroll-behavior-y: none;
-}
 :root {
     --var-transition: all .4s ease;
 
@@ -22,6 +19,9 @@ img {
 .container {
     width: 80%;
 }
+
+
+
 .hidden{
     opacity: 0;
     transition: all 1.5s ;
@@ -89,12 +89,15 @@ img {
 }
 .navbar ul li {
     list-style: none;
+    
 }
 .navbar ul li a {
     text-decoration: none;
     color: #ffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    width: 100%;
+    height: 100%;
     transition: var(--var-transition);
 }
 .contact-image {
@@ -250,10 +253,9 @@ img {
 .smooth {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-}
-.smooth section {
     scroll-snap-align: start;
 }
+
 
 
 .imgIcon2{
@@ -651,18 +653,7 @@ img {
 /* RIGHT-ABOUT-US PAGE ENDS FROM HERE */
 /* ABOUT ME PAGE ENDS FROM HERE */
 
-/* SERVICE PAGE STARTS FROM HERE */
-/* .my-service{
-    display: grid;
-    grid-template-columns: 45% 55%;
-    height: 700px;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(21, 20, 20, 0.925);
 
-
-} */
-/* left service */
 
 .left-service {
     display: grid;  
@@ -742,7 +733,7 @@ img {
     /* LANGING PAGE LEFT SECTION ENDS FROM HERE */
     
     .navbar {
-        position: absolute;
+        position: absolute !important;
         background: rgb(28, 27, 27);
         top: 73px;
         width: 100%;
@@ -764,6 +755,7 @@ img {
     }
     .navbar ul li {
         width: 100%;
+        height: 100%;
         list-style: none;
         text-align: center;
         padding: 30px 0;
